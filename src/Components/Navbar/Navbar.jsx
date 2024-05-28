@@ -1,14 +1,16 @@
 import React from 'react'
-import Drawer from'../Drawer/Drawer.jsx'
-import logo from '../../assets/react.svg'
+import Drawer from '../Drawer/Drawer.jsx'
+import Logo from '../../assets/images/logo.png'
+import NavOption from '../NavOption/NavOption.jsx'
 
 const Navbar = () => {
   return (
     <div>
-        <div className='flex justify-between items-center w-full'>
-        <img src={logo} alt="" />
-        <Drawer/>
-        </div>
+      <div className='flex justify-between items-center max-w-7xl mx-auto'>
+        <img className="h-8" src={Logo} alt="" />
+        <NavOption > </NavOption>
+        <Drawer ></Drawer>
+      </div>
     </div>
   )
 }
