@@ -21,8 +21,8 @@ const Navbar=() => {
         <Button onClick={openDrawer} className="btn btn-primary bg-transparent text-blue-500 font-bold  shadow-none hover:bg-transparent hover:text-blue-500 hover:shadow-none ">
         <img src={MyMenu} alt=""/>
       </Button>
-      <Drawer open={open} onClose={closeDrawer} className="bg-red-600">
-        <div className="mb-2 flex items-center justify-between p-4">
+      <Drawer open={open} onClose={closeDrawer} className="bg-white bg-blend-saturation bg-opacity-40 backdrop-blur-md">
+        <div className="mb-2 flex items-center justify-between p-4  ">
           <Typography variant="h5" color="blue-gray">
             Material Tailwind
           </Typography>
