@@ -3,9 +3,7 @@ import { Button } from "@material-tailwind/react";
 import Navbar from './Components/Navbar/Navbar';
 const App = () => {
   return (
-    <div className='flex justify-between'>
-    
-      <Button>Button</Button>
+    <div className='flex justify-between bg-white'>
       <Navbar/>
     </div>
   )

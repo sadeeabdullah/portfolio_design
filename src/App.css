@@ -1,11 +1,1 @@
 
-.thediv::selection{
-  color: red;
-}
-.thediv::first-letter{
-  color: green;
-  text-decoration: underline;
-}
-.thediv::after{
-  content: 'hello honey ';
-}
