@@ -16,6 +16,9 @@ module.exports = withMT({
           dark: '#008000',
           light: '#90EE90',
         },
+        textColor:{
+          DEFAULT: '#0A4C4B',
+        }
       },
 
     },

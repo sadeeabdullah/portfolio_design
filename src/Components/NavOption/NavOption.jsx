@@ -3,7 +3,7 @@ import React from 'react'
 const NavOption = () => {
   return (
     <div >
-        <ul className='  gap-4 hidden lg:flex'>
+        <ul className=' text-lg text-textColor gap-8 hidden lg:flex'>
             <li>Home</li>
             <li>About</li>
             <li>Project</li>
