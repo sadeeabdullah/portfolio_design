@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Drawer from '../Drawer/Drawer.jsx'
 import Logo from '../../assets/images/logo.png'
 import NavOption from '../NavOption/NavOption.jsx'
@@ -12,9 +12,18 @@ const Navbar = () => {
       setScroll(false)
     }
   }
+  useEffect(() => {
+    window.addEventListener('scroll',handleScroll);
+    return () => {
+      window.removeEventListener('scroll',handleScroll);
+    }
+  }, [scroll])
   return (
-    <div>
-      <div className='flex justify-between items-center lg:max-w-7xl lg:mx-auto py-4 mx-4 '>
+    <div className={scroll
+      ? "h-16 top-0 z-30 sticky  bg-navBg  transition-ease-in-out duration-3000  lg:mx-auto py-4  backdrop-filter backdrop-blur-md bg-opacity-80 " 
+      :
+      " h-16  py-4 bg-gray-300"}>
+      <div className='flex justify-between items-center lg:max-w-7xl mx-auto '>
         <img className="h-8" src={Logo} alt="" />
         <NavOption > </NavOption>
         <Drawer ></Drawer>

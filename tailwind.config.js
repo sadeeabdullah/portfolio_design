@@ -18,6 +18,9 @@ module.exports = withMT({
         },
         textColor:{
           DEFAULT: '#0A4C4B',
+        },
+        navBg:{
+          DEFAULT: '#F0EDFF',
         }
       },
 
