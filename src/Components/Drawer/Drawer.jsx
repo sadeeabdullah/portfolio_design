@@ -21,9 +21,9 @@ const DrawerForMobile=() => {
         <Button onClick={openDrawer} className="btn btn-primary bg-transparent text-blue-500 font-bold  shadow-none hover:bg-transparent hover:text-blue-500 hover:shadow-none lg:hidden">
         <img src={MyMenu} alt=""/>
       </Button>
-      <Drawer open={open} onClose={closeDrawer} className="bg-slate-500 bg-opacity-90 backdrop-blur-md brightness-150">
+      <Drawer open={open} onClose={closeDrawer} className="bg-slate-500 bg-opacity-90 backdrop-blur-md w-[200px] brightness-150">
         <div className="mb-2 flex items-center justify-between p-4 bg-blue-gray-800 ">
-          <img className="h-8 " src={Logo} alt="" />
+          <img className="h-6 " src={Logo} alt="" />
           <IconButton variant="text" color="blue-gray" className="flex justify-end" onClick={closeDrawer}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
