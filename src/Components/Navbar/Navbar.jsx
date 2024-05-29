@@ -20,13 +20,13 @@ const Navbar = () => {
   }, [scroll])
   return (
     <div className={scroll
-      ? "h-16 top-0 z-30 sticky  bg-navBg  transition-ease-in-out duration-3000  lg:mx-auto py-4  backdrop-filter backdrop-blur-md bg-opacity-80 " 
+      ? "h-16 top-0 z-30 sticky  bg-navBg  transition-ease-in-out duration-3000  mx-auto py-4   " 
       :
-      " h-16  py-4 bg-gray-300"}>
-      <div className='flex justify-between items-center lg:max-w-7xl mx-auto '>
+      " h-16  py-4 bg-navBg"}>
+      <div className='flex justify-between items-center lg:max-w-7xl w-[calc(100%-2rem)] mx-auto '>
         <img className="h-8" src={Logo} alt="" />
         <NavOption > </NavOption>
-        <Drawer ></Drawer>
+        <Drawer   ></Drawer>
       </div>
     </div>
   )

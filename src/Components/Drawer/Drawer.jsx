@@ -18,11 +18,11 @@ const DrawerForMobile=() => {
   return (
     <React.Fragment>
         
-        <Button onClick={openDrawer} className="btn btn-primary bg-transparent text-blue-500 font-bold  shadow-none hover:bg-transparent hover:text-blue-500 hover:shadow-none lg:hidden">
+        <Button onClick={openDrawer} className="btn btn-primary bg-transparent text-blue-500 font-bold  shadow-none hover:bg-transparent hover:text-blue-500 hover:shadow-none -py-2 lg:hidden">
         <img src={MyMenu} alt=""/>
       </Button>
       <Drawer open={open} onClose={closeDrawer} className="bg-slate-500 bg-opacity-90 backdrop-blur-md w-[200px] brightness-150">
-        <div className="mb-2 flex items-center justify-between p-4 bg-blue-gray-800 ">
+        <div className="mb-2 flex items-center justify-between p-3 bg-blue-gray-800 ">
           <img className="h-6 " src={Logo} alt="" />
           <IconButton variant="text" color="blue-gray" className="flex justify-end" onClick={closeDrawer}>
             <svg
@@ -42,11 +42,11 @@ const DrawerForMobile=() => {
           </IconButton>
 
         </div>
-        <List className="text-white font-semibold">
-        <ListItem>Home</ListItem>
-        <ListItem>About</ListItem>
-        <ListItem>Project</ListItem>
-        <ListItem>Contacts</ListItem>
+        <List className="text-textColor font-semibold ">
+        <li>Home</li>
+        <li>About</li>
+        <li>Projects</li>
+        <li>contact</li>
         </List>
       </Drawer>
     </React.Fragment>
