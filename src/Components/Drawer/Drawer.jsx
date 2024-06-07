@@ -4,11 +4,10 @@ import {
   Button,
   IconButton,
   List,
-  ListItem,
-  ListItemPrefix,
 } from "@material-tailwind/react";
 import MyMenu from '../../assets/Icon/menu.png'
 import Logo from '../../assets/images/logo.png'
+import {Link} from 'react-scroll'
  
 const DrawerForMobile=() => {
   const [open, setOpen] = React.useState(false);
@@ -43,10 +42,63 @@ const DrawerForMobile=() => {
 
         </div>
         <List className="text-textColor font-semibold ">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>contact</li>
+          
+        <Link
+              to="home"
+              spy={true} 
+              hashSpy={true}
+              isDynamic={true}
+              ignoreCancelEvents={true}
+              spyThrottle={500}
+              className='cursor-pointer'
+              smooth={true} 
+              offset={50} 
+              duration={500} 
+              onClick={() => scrollTo("banner")}>
+              Home
+            </Link>
+            <Link
+              to="home"
+              spy={true} 
+              hashSpy={true}
+              isDynamic={true}
+              ignoreCancelEvents={true}
+              spyThrottle={500}
+              className='cursor-pointer'
+              smooth={true} 
+              offset={50} 
+              duration={500} 
+              onClick={() => scrollTo("about")}>
+              About
+            </Link>
+            <Link
+              to="home"
+              spy={true} 
+              hashSpy={true}
+              isDynamic={true}
+              ignoreCancelEvents={true}
+              spyThrottle={500}
+              className='cursor-pointer'
+              smooth={true} 
+              offset={50} 
+              duration={500} 
+              onClick={() => scrollTo("project")}>
+              Projects
+            </Link>
+            <Link
+              to="home"
+              spy={true} 
+              hashSpy={true}
+              isDynamic={true}
+              ignoreCancelEvents={true}
+              spyThrottle={500}
+              className='cursor-pointer'
+              smooth={true} 
+              offset={50} 
+              duration={500} 
+              onClick={() => scrollTo("contact")}>
+              Contact
+            </Link>
         </List>
       </Drawer>
     </React.Fragment>

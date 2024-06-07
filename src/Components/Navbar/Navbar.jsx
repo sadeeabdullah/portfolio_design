@@ -24,9 +24,9 @@ const Navbar = () => {
       :
       " h-16  py-4 bg-navBg"}>
       <div className='flex justify-between items-center lg:max-w-7xl w-[calc(100%-2rem)] mx-auto '>
-        <img className="h-8" src={Logo} alt="" />
+        <img className="h-8 bg-transparent" src={Logo} alt="" />
         <NavOption > </NavOption>
-        <Drawer   ></Drawer>
+        <Drawer></Drawer>
       </div>
     </div>
   )
