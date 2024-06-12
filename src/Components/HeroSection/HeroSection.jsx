@@ -6,7 +6,12 @@ const HeroSection = () => {
 
         {/* div for the social media */}
         <div>
-
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
 
         {/* div for hero text */}
