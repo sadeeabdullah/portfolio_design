@@ -24,7 +24,7 @@ module.exports = withMT({
         }
       },
       boxShadow:{
-        'custom-shadow': '20px 20px 60px #bebebe, -20px -20px 60px #ffffff',
+        'custom-shadow': '18px 18px 36px #cecece , -18px -18px 36px #ffffff',
       },
 
     },
