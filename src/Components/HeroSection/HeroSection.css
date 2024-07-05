@@ -81,8 +81,8 @@ ul {
   .example-2 .icon-content a:hover .filled {
     height: 100%;
   }
-  .example-2 .icon-content a[data-social="spotify"] .filled,
-  .example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
+  .example-2 .icon-content a[data-social="Github"] .filled,
+  .example-2 .icon-content a[data-social="Github"] ~ .tooltip {
     background-color: #1db954;
   }
   .example-2 .icon-content a[data-social="pinterest"] .filled,

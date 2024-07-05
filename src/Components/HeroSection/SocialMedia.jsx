@@ -9,19 +9,19 @@ const SocialMedia = () => {
         <ul class="example-2">
   <li class="icon-content">
     <a
-      href="https://www.spotify.com/"
-      aria-label="Spotify"
-      data-social="spotify"
+      href="https://www.github.com/"
+      aria-label="Github"
+      data-social="Github"
     >
       <div class="filled"></div>
       <FaGithubAlt />
 
     </a>
-    <div class="tooltip">Spotify</div>
+    <div class="tooltip">Github</div>
   </li>
   <li class="icon-content">
     <a
-      href="https://www.pinterest.com/"
+      href="https://www.github.com/"
       aria-label="Pinterest"
       data-social="pinterest"
     >
