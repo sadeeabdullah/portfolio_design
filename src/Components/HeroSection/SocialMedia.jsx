@@ -5,7 +5,7 @@ import { FaGithubAlt } from "react-icons/fa";
 const SocialMedia = () => {
   return (
     
-        <div className=' rounded-full inline-block px-1 py-2 shadow-custom-shadow'>
+        <div className=' rounded-full h-fit inline-block px-1 py-2 shadow-custom-shadow'>
         <ul class="example-2">
   <li class="icon-content">
     <a
